@@ -1,0 +1,15 @@
+[package]
+name = "buffer-to-bitestring"
+version = "0.1.0"
+authors = ["serioga"]
+
+[dependencies.redis]
+git = "https://github.com/mitsuhiko/redis-rs.git"
+
+[lib]
+# The name of a target is the name of the library that will be generated. This
+# is defaulted to the name of the package or project.
+name = "lib"
+
+# This field points at where the crate is located, relative to the Cargo.toml.
+path = "src/lib.rs"
