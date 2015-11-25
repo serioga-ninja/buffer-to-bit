@@ -9,7 +9,7 @@ fn octet(arr: Vec<i32>) -> Vec<i32> {
 	    return b;
 	}
 	for i in len..fill {
-	    b[i] = 0;
+	    b.push(0);
 	}
 	return b;
 }

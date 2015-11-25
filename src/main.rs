@@ -8,7 +8,9 @@ fn main()
     let mut file=File::open("Cargo.toml").unwrap();
     let mut buf=[0u8;12];
     file.read(&mut buf).unwrap();
-    lib::do_this(buf);
-
-    // use file
+    
+    let s = lib::do_this(buf);
+    for i in &s {
+    	println!("{:?}", i);
+    }
 }
